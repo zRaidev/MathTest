@@ -26,6 +26,9 @@ const incorrectLi = document.querySelector(".incorrect__li");
 const totalLi = document.querySelector(".total__li");
 const totalPercentageLi = document.querySelector(".total-percentaje__li");
 
+let correct = 0;
+let incorrect = 0;
+
 additionOp.addEventListener("click", () => opDifficulties("Addition"));
 subtractionOp.addEventListener("click", () => opDifficulties("Subtraction"));
 multOp.addEventListener("click", () => opDifficulties("Multiplication"));
@@ -40,10 +43,26 @@ function opDifficulties(operation) {
   selectionsArray = [operation]
 };
 
-easy.addEventListener("click", () => finalOptions("Easy"));
-mid.addEventListener("click", () => finalOptions("Mid"));
-hard.addEventListener("click", () => finalOptions("Hard"));
-extreme.addEventListener("click", () => finalOptions("Extreme"));
+easy.addEventListener("click", () => {
+  finalOptions("Easy");
+  correct = 0;
+  incorrect = 0;
+});
+mid.addEventListener("click", () => {
+  finalOptions("Mid");
+  correct = 0;
+  incorrect = 0;
+});
+hard.addEventListener("click", () => {
+  finalOptions("Hard");
+  correct = 0;
+  incorrect = 0;
+});
+extreme.addEventListener("click", () => {
+  finalOptions("Extreme");
+  correct = 0;
+  incorrect = 0;
+});
 
 function finalOptions(difficulty) {
   let diffString = difficulty.toLowerCase()
@@ -75,8 +94,6 @@ function finalOptions(difficulty) {
   }
 }
 
-let correct = 0;
-let incorrect = 0;
 function addition(difficulty) {
   //console.log(difficulty)
   if (difficulty == "easy") {
