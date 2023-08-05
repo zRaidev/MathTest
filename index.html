@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Isaac Vergara">
+    <meta name="description" content="¡Mejora tus habilidades matemáticas con nuestro cuestionario! Multiplicación, Suma y Resta. Desafía tu mente, resuelve problemas y practica en este test de Matemáticas.">
+    <meta name="keywords" content="matemáticas, cuestionario, práctica">
+    <meta name="robots" content="index, all, follow">
+    <meta name="category" content="matemáticas, cuestionario, test, práctica">
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+  
+    <!-- External scripts -->
+    <script src="https://kit.fontawesome.com/171908db7a.js" crossorigin="anonymous"></script>
+    
+    <!-- Main -->
+    <link rel="icon" type="image/x-icon" href="logo/logo.ico">
+    <title>MathTest - Practica Matemáticas</title>
+  </head>
+<body>
+  <header>
+    <i class="fa-solid fa-bars"></i>
+    <div class="h1">
+      <h1>MathTest</h1>
+    </div>
+  </header>
+  <main>
+    <aside class="left-aside">
+      <nav class="op-options">
+        <div class="title-container">
+          <i class="fa-solid fa-arrow-left"></i>
+          <h2 class="h2-asd h2-asides">Operation Options</h2>
+        </div>
+        <ul class="operations">
+          <li class="addition-op">Addition</li>
+          <li class="subtraction-op">Subtraction</li>
+          <li class="mult-op">Multiplication</li>
+          <li class="mix-op">Mix Operations</li>
+        </ul>
+        <ul class="difficulties">
+          <li class="easy">Easy</li>
+          <li class="mid">Mid</li>
+          <li class="hard">Hard</li>
+          <li class="extreme">Extreme</li>
+        </ul>
+      </nav>
+    </aside>
+    <aside class="right-aside">
+      <h2 class="h2-asides">Progress</h2>
+      <ul>
+        <li class="correct__li">Correct: 0</li>
+        <li class="incorrect__li">Incorrect: 0</li>
+        <li class="total__li">Total: 0</li>
+        <li class="total-percentaje__li">Total percentage: 0%</li>
+      </ul>
+    </aside>
+    <div class="rest-aside"></div>
+    <article class="main">
+      <div class="main-container">
+        <h2 class="operation-name" id="op-h2">choose the operation</h2>
+        <div class="op-container"><!--SE CREA CON JS--></div>
+      </div>
+      <div class="final-results"><!--SE CREA CON JS--></div>
+      <div class="bg-results"><!--SE CREA CON JS--></div>
+    </article>
+  </main>
+  <style class="external-style"></style>
+  <style class="responsive-aside"></style>
+  <script src="js/index.js"></script>
+  <script src="js/functions.js"></script>
+</body>
+</html>

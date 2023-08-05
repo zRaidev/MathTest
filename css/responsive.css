@@ -1,0 +1,94 @@
+@media (min-width: 1199.98px) {
+  .fa-bars {
+    display: none;
+  }
+
+  .left-aside {
+    background-color: #222;
+    height: 100%;
+    width: 18%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -500;
+  }
+
+  .right-aside {
+    display: block;
+    background-color: #222;
+    height: 100%;
+    width: 18%;
+    position: absolute;
+    left: 82%;
+    top: 0;
+    z-index: -1000;
+  }
+  
+  .right-aside li {
+    list-style-type: none;
+    padding: .5em;
+  }
+
+  .right-aside h2 {
+    padding: 36% 0 .7em .32em;
+  }
+
+  .rest-aside {
+    display: none;
+  }
+
+  .main {
+    display: inline;
+  }
+
+  .main-container {
+    display: inline;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  .final-results {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  @keyframes correct-answer_responsive {
+    0% {background-color: #222;}
+    45% {background-color: #0d740d;}
+    55% {background-color: #0d740d;}
+    100% {background-color: #222;}
+  }
+  
+  @keyframes incorrect-answer_responsive {
+    0% {background-color: #222;}
+    45% {background-color: #740d0d;}
+    55% {background-color: #740d0d;}
+    100% {background-color: #222;}
+  }
+
+  .bg-results {
+    display: none;
+    background-color: #111;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+    animation: bg-results-animation 1.6s forwards;
+  }
+
+  @keyframes bg-results-animation {
+    0% {opacity: 0;}
+    100% {opacity: .6;}
+  }
+
+  #op-h2 {
+    font-size: 225%;
+  }
+}
+
+/**THE RESPONSIVE DOESN`T WORK, I NEED TO RESTRUCTURE ALL THE WEB SISTEM I THINK**/
