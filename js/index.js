@@ -25,6 +25,7 @@ const correctLi = document.querySelector(".correct__li");
 const incorrectLi = document.querySelector(".incorrect__li");
 const totalLi = document.querySelector(".total__li");
 const totalPercentageLi = document.querySelector(".total-percentaje__li");
+const rightAside = document.querySelector(".right-aside");
 
 let correct = 0;
 let incorrect = 0;
@@ -628,7 +629,8 @@ function generalOperationSistem(answer, ops) {
   correctLi.innerHTML = `Correct: ${correct}`
   incorrectLi.innerHTML = `Incorrect: ${incorrect}`
   totalLi.innerHTML = `Total: ${correct + incorrect}`
-  totalPercentageLi.innerHTML = `Total Percentage: ${totalPercentage}`
+  if (totalPercentage == 'NaN') totalPercentageLi.innerHTML = `Total Percentage: 0%`
+  else totalPercentageLi.innerHTML = `Total Percentage: ${totalPercentage}%`
   if (totalAnswers == ops) {
 
     finalResults.innerHTML = `
@@ -646,3 +648,4 @@ function generalOperationSistem(answer, ops) {
     })
   }
 }
+
